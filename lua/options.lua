@@ -70,4 +70,8 @@ vim.o.confirm = true
 -- enable nerd fonts
 vim.g.have_nerd_font = true
 
-
+vim.diagnostic.config({
+  virtual_text = true,  -- show error message inline
+  signs = true,         -- show signs in the gutter
+  severity_sort = true,
+})
