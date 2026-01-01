@@ -1,2 +1,5 @@
 return {
+    {
+        'github/copilot.vim',
+    }
 }

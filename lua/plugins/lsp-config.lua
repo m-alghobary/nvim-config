@@ -22,6 +22,7 @@ return {
                 ts_ls = {},
                 rust_analyzer = {},
                 intelephense = {},
+                omnisharp = {},
             }
 
             require("mason-lspconfig").setup({
@@ -41,6 +42,8 @@ return {
             -- LSP keymaps
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+            vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+            vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, {})
             vim.keymap.set({ "n", "v" }, "ca", vim.lsp.buf.code_action, {})
         end,
     },

@@ -5,7 +5,7 @@ return {
     build = ":TSUpdate",
 
     opts = {
-        ensure_installed = { "c", "lua", "javascript", "typescript", "php", "vue", "html", "css" },
+        ensure_installed = { "c", "lua", "javascript", "typescript", "php", "vue", "html", "css", "json" },
         auto_install = true,
         highlight = {
             enable = true,
